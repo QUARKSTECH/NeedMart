@@ -16,3 +16,6 @@ input[type="text"], input[type="password"] {
     background-color: inherit;
     border: none;
 }
+.dropdown {
+    cursor: pointer;
+}
