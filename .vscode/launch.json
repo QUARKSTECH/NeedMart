@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/NeedMart.API/bin/Debug/netcoreapp2.1/DatingApp.API.dll",
+            "program": "${workspaceFolder}/NeedMart.API/bin/Debug/netcoreapp2.1/NeedMart.API.dll",
             "args": [],
             "cwd": "${workspaceFolder}/NeedMart.API",
             "stopAtEntry": false,
