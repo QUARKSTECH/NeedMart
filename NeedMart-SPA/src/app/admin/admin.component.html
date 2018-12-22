@@ -1,0 +1,443 @@
+<section class="contact-info section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 marginbtm">
+        <img
+          class="img-responsive"
+          src="../../assets/img/slider/02.jpg"
+          alt=""
+        />
+        <div class="centered"><h1>Admin Panel - {{authService.decodedToken?.given_name}}</h1></div>
+      </div>
+      <div class="col-sm-12" style="overflow-x: auto">
+        <div class="row">
+          <h2>Companies</h2>
+          <table
+            class="table table-striped"
+            [mfData]="userList"
+            #companyTableAdmin="mfDataTable"
+            [mfRowsOnPage]="5"
+          >
+            <thead>
+              <tr>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="id">Id</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="userName">UserName</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="companyName">Company Name</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="email">Email</mfDefaultSorter
+                  >
+                </th>
+                <th style="width: 1%">
+                  <mfDefaultSorter by="contactNumber">Contact Number</mfDefaultSorter
+                  >
+                </th>
+                <th style="width: 20%">
+                  <mfDefaultSorter by="createdDate">Created Date</mfDefaultSorter>
+                </th>
+                <th style="width: 20%">
+                    <mfDefaultSorter by="createdDate">Action</mfDefaultSorter>
+                  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of companyTableAdmin.data">
+                <td>{{ user.id }}</td>
+                <td>{{ user.userName }}</td>
+                <td>{{ user.companyName }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.contactNumber }}</td>
+                <td>{{ user.createdDate | date}}</td>
+                <td><a class="fa fa-edit" (click)="editUser(user)" style="cursor: pointer"></a></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <mfBootstrapPaginator
+                    [rowsOnPageSet]="[5, 10, 25]"
+                  ></mfBootstrapPaginator>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-12" style="overflow-x: auto">
+        <div class="row">
+          <h2>Machines</h2>
+          <table
+            class="table table-striped"
+            [mfData]="machineList"
+            #machineTableAdmin="mfDataTable"
+            [mfRowsOnPage]="5"
+          >
+            <thead>
+              <tr>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="name">Id</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="email">Serial Number</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="age">Model</mfDefaultSorter>
+                </th>
+                <th style="width: 15%">
+                  <mfDefaultSorter by="age"
+                    >Current running hrs</mfDefaultSorter
+                  >
+                </th>
+                <th style="width: 1%">
+                  <mfDefaultSorter by="age"
+                    >Current loading hrs</mfDefaultSorter
+                  >
+                </th>
+                <th style="width: 20%">
+                  <mfDefaultSorter by="age">Edit</mfDefaultSorter>
+                </th>
+                <th style="width: 20%">
+                    <mfDefaultSorter by="age">Upload</mfDefaultSorter>
+                  </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let machine of machineTableAdmin.data">
+                <td>{{ machine.id }}</td>
+                <td>{{ machine.machineSerialNo }}</td>
+                <td>{{ machine.machineModel }}</td>
+                <td>{{ machine.currentRunningHours }}</td>
+                <td>{{ machine.currentLoadingHours }}</td>
+                <td><a class="fa fa-edit" (click)="editMachine(machine)" style="cursor: pointer"></a></td>
+                <td><app-fileupload [machineId]="machine.id" (uploadedJobCardEvent)="uploadedJobCard($event)"></app-fileupload></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <mfBootstrapPaginator
+                    [rowsOnPageSet]="[5, 10, 25]"
+                  ></mfBootstrapPaginator>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-6">
+          <div class="contact-form-area" id="adminUserAdd">
+              <h2>Update Company</h2>
+              <!-- contact form -->
+              <div class="contact-form">
+                <form #userForm="ngForm" (ngSubmit)="saveEditedUser()">
+                  <div class="form-content">
+                    <input
+                      name="username"
+                      placeholder="User Name"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="user.userName"
+                    />
+                  </div>    
+                  <div class="form-content">
+                        <input
+                          name="name"
+                          placeholder="Company name"
+                          class="form-control"
+                          required=""
+                          type="text"
+                          [(ngModel)]="user.companyName"
+                        />
+                      </div>
+                      <div class="form-content">
+                        <input
+                          name="email"
+                          placeholder="Email Address"
+                          class="form-control"
+                          required=""
+                          type="email"
+                          [(ngModel)]="user.email"
+                        />
+                      </div>
+                      <div class="form-content">
+                        <input
+                          name="contact"
+                          placeholder="Contact Number"
+                          class="form-control"
+                          required=""
+                          type="text"
+                          [(ngModel)]="user.contactNumber"
+                        />
+                      </div>
+                      <div class="form-content">
+                        <input
+                          name="createdDate"
+                          placeholder="Created Date"
+                          class="form-control"
+                          required=""
+                          type="text"
+                          [(ngModel)]="user.createdDate"
+                        />
+                      </div>
+                      <button
+                    type="submit"
+                    name="submit"
+                    class="sent-button arina-btn hvr-radial-out"
+                    [disabled]="!userForm.valid"
+                    *ngIf="isEditUser"
+                  >
+                    UPDATE
+                  </button>
+                  <button
+                    type="reset"
+                    name="submit"
+                    class="sent-button arina-btn hvr-radial-out"
+                    (click)="reset()"
+                  >
+                    CLEAR
+                  </button>
+                </form>
+              </div>
+              
+            </div>
+      </div>
+      <div class="col-sm-6">
+        <!-- contact form content -->
+        <div class="contact-form-area" id="adminmachineAdd">
+          <h2>Update machine</h2>
+          <!-- contact form -->
+          <div class="contact-form">
+            <form #machineForm="ngForm" (ngSubmit)="saveEditedMachine()">
+              <!-- <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="name"
+                      placeholder="Company name"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.companyName"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="email"
+                      placeholder="Email Address"
+                      class="form-control"
+                      required=""
+                      type="email"
+                      [(ngModel)]="machine.Email"
+                    />
+                  </div>
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="contactNo"
+                      placeholder="Contact number"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.contactNumber"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="serialNo"
+                      placeholder="Machine Serial No."
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.machineSerialNo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="make"
+                      placeholder="Machine make"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.machineMake"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="model"
+                      placeholder="Machine model"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.machineModel"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="runningHours"
+                      placeholder="Current running hours"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.currentRunningHours"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="loadingHours"
+                      placeholder="Current loading hours"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.currentLoadingHours"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="serviceDate"
+                      placeholder="Last service date"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.lastService"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="form-content">
+                    <input
+                      name="serviceHours"
+                      placeholder="Last service hours"
+                      class="form-control"
+                      required=""
+                      type="text"
+                      [(ngModel)]="machine.lastServiceHours"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-message">
+                    <textarea
+                      class="field-element form-control"
+                      data-gramm="true"
+                      spellcheck="false"
+                      data-gramm_editor="true"
+                      name="msg"
+                      placeholder="Message"
+                      required=""
+                      [(ngModel)]="machine.message"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="sent-button arina-btn hvr-radial-out"
+                    [disabled]="!machineForm.valid"
+                    *ngIf="isEdit"
+                  >
+                    UPDATE
+                  </button>
+                  <button
+                    type="reset"
+                    name="submit"
+                    class="sent-button arina-btn hvr-radial-out"
+                    (click)="reset()"
+                  >
+                    CLEAR
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12" style="overflow-x: auto">
+          <h2>Service Job Cards</h2>
+          <div class="footer-widgets address-wid con-info">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div>
+                  <table
+                    class="table table-striped"
+                    [mfData]="jobCard"
+                    #jobcardTable="mfDataTable"
+                    [mfRowsOnPage]="10"
+                  >
+                    <thead>
+                      <tr>
+                        <th style="width: 20%">
+                          <mfDefaultSorter by="email">JobCard</mfDefaultSorter>
+                        </th>
+                        <th style="width: 20%">
+                            <mfDefaultSorter by="name">MachineId</mfDefaultSorter>
+                          </th>
+                        <th style="width: 20%">
+                          <mfDefaultSorter by="name">Month</mfDefaultSorter>
+                        </th>
+
+                        <th style="width: 20%">
+                          <mfDefaultSorter by="age">View</mfDefaultSorter>
+                        </th>
+                        <th style="width: 20%">
+                            <mfDefaultSorter by="age">Delete</mfDefaultSorter>
+                          </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of jobcardTable.data">
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.machineId }}</td>
+                        <td>{{ item.createdDate | date }}</td>
+                        <td><a href="{{item.url}}" target="_blank"><i class="fa fa-eye"></i></a></td>
+                        <td><a href=""><i class="fa fa-trash"></i></a></td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="4">
+                          <mfBootstrapPaginator
+                            [rowsOnPageSet]="[5, 10, 25]"
+                          ></mfBootstrapPaginator>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>

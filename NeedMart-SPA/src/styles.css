@@ -3,6 +3,35 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import '../node_modules/alertifyjs/build/css/alertify.min.css';
 @import '../node_modules/alertifyjs/build/css/themes/bootstrap.min.css';
-@import '../src/assets/css/base.css';
-@import '../src/assets/css/vendor.css';
-@import '../src/assets/css/main.css';
+@import '../src/assets/css/owl.carousel.css';
+@import '../src/assets/css/normalize.css';
+@import '../src/assets/css/icomoon.css';
+/* @import '../src/assets/css/chosen.css'; */
+@import '../src/assets/css/prettyPhoto.css';
+@import '../src/assets/css/scrollbar.css';
+@import '../src/assets/css/morris.css';
+@import '../src/assets/css/YouTubePopUp.css';
+@import '../src/assets/css/auto-complete.css';
+@import '../src/assets/css/jquery.navhideshow.css';
+@import '../src/assets/css/transitions.css';
+@import '../src/assets/css/style.css';
+@import '../src/assets/css/color.css';
+@import '../src/assets/css/colorv4.css';
+@import '../src/assets/css/responsive.css';
+/* 
+@import '../src/assets/css/bootstrap-slider.css';
+
+
+@import '../src/assets/css/colorv2.css';
+@import '../src/assets/css/colorv3.css';
+
+@import '../src/assets/css/dbresponsive.css';
+@import '../src/assets/css/dbstyle.css';
+
+
+
+
+
+
+
+ */

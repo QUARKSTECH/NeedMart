@@ -1,5 +1,5 @@
 {
-  "name": "needmart-spa",
+  "name": "omphoenix-spa",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,11 +21,15 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "@auth0/angular-jwt": "^2.0.0",
+    "@types/googlemaps": "^3.30.16",
     "alertifyjs": "^1.11.2",
+    "angular-6-datatable": "^0.8.0",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
+    "ng2-file-upload": "^1.3.0",
     "ngx-bootstrap": "^3.0.1",
+    "ngx-owl-carousel": "^2.0.7",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },

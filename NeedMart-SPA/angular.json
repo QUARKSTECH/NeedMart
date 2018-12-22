@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/NeedMart-SPA",
+            "outputPath": "../NeedMart.API/wwwroot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,10 +23,34 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
             ],
             "scripts": [
-              "node_modules/alertifyjs/build/alertify.min.js"
+              "node_modules/alertifyjs/build/alertify.min.js",
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/tinymce/tinymce.min4bb5.js",
+              "src/assets/js/appear.js",
+              "src/assets/js/backgroundstretch.js",
+              "src/assets/js/bootstrap-slider.js",
+              "src/assets/js/chosen.jquery.js",
+              "src/assets/js/countTo.js",
+              "src/assets/js/dev_themefunction.js",
+              "src/assets/js/isotope.pkgd.js",
+              "src/assets/js/jquery.navhideshow.js",
+              "src/assets/js/jquery.steps.js",
+              "src/assets/js/jquery.sticky-kit.js",
+              "src/assets/js/jquery.sticky-sidebar.js",
+              "src/assets/js/jquery.vide.min.js",
+              "src/assets/js/parallax.js",
+              "src/assets/js/prettyPhoto.js",
+              "src/assets/js/raphael-min.js",
+              "src/assets/js/ResizeSensor.js",
+              "src/assets/js/scrollbar.min.js",
+              "src/assets/js/sortable.js",
+              "src/assets/js/YouTubePopUp.jquery.js"
             ]
           },
           "configurations": {

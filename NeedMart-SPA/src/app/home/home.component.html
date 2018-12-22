@@ -1,158 +1,2060 @@
-<main class="s-home s-home--particles">
-  <div id="particles-js" class="home-particles"></div>
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zxx"> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang="zxx"> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang="zxx"> <![endif]-->
+<!--[if gt IE 8]><!-->	
+<html class="no-js" lang="zxx"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Needmart || Service Provider</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../assets/favicon.png">
+	
+<style>
+  .footer_text_li > a {
+    color: #6fbf17;
+}
+.copyright_text > a {
 
-  <div class="gradient-overlay"></div>
-  <!-- <app-register></app-register> -->
-  <div class="home-content">
-    <form  #serviceForm="ngForm" class="" (ngSubmit)="createAppointment()" >
-      <div class="row home-content__main">
-        <div class="col-four home-content__counter">
-          <h3>Welcome to NeedMart</h3>
+    color: #6fbf17;
 
-          <h1>Select your location <br /></h1>
-          <div class="form-group">
-            <select [(ngModel)]='model.location' class="form-control" id="location" name="location">
-              <option *ngFor="let value of values" [value]="value.Id" >{{
-                value.Value
-              }}</option>
-            </select>
-          </div>
+}
+.responsive-look img {
+  position: absolute;
+   top: -180px;
+   
+transform: rotate(-17deg);
+height: 560px;
+}
+	     .listar-postcontent {
+             direction:rtl;
+        }
+		.form_control_margin{
+     
+    margin: 20px 0;
 
-          <p>
-            You can also be a part by registering with us or you can simply book
-            an service appoinment. <br />
-            Please make your selection.
-          </p>
-          <app-register></app-register>
-        </div>
+ }
+ .modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid transparent !important;
+}
+.mypop_col{
+    background: #6fbf17 !important;
+    padding: 1px 8px;
+    border: transparent;
+}
+.modal-content{
+   background: linear-gradient(#ffffffed, #b5b3b3bd);
+}
 
-        <div class="col-eight home-content__counter">
-          <h3>Make life Easy</h3>
-          <h1>Select your need type on NeedMart.</h1>
-          <div class="form-group">
-            <select [(ngModel)]='model.service' class="form-control" id="service" name="service">
-              <option *ngFor="let value of values" [value]="value.Id" >{{
-                value.Value
-              }}</option>
-            </select>
-          </div>
-          <p>
-            NeedMart is a mobile marketplace for local services in India. We
-            will help customers hire trusted professionals for all their service
-            needs. We are staffed with young, passionate people working
-            tirelessly to make a difference in the lives of people by catering
-            to their service needs at their doorsteps.
-          </p>
-          <div class="row">
-            <div class="col-four"><h4>Book an appointment now</h4></div>
+@media only screen and (min-width: 20px) and (max-width:600px){   
+.listar-description{
+ display:none;
 
-            <div class="col-four">
-              <button type="button" class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                Appointment
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
+}
+.responsive-look img {
+  position: absolute;
+   top: -180px;
+   
+}
+.mob_file.col-md-7.col-sm-12.col-xs-12 {
+    background: #ffffff4d;
+    padding: 40px;
+    margin: 30px 0;
+}
+}
+
+@media only screen and (min-width: 20px) and (max-width:500px){   
+.listar-description{
+ display:flex;
+
+}
+
+.mob_file.col-md-7.col-sm-12.col-xs-12 {
+    background: #ffffff4d;
+    padding: 40px;
+    margin: 30px 0;
+}
+}
+#downlod_app {
+    color: #FFF;
+    background: #45ade7;
+    background: linear-gradient(to right, #f9b42b, #6fbf17);
+    margin: 170px 0 90px;
+    padding-bottom: 115px;
+}
+.responsive-look img {
+    position: absolute;
+    top: -180px;
+}
+
+
+ @media only screen and (min-width: 100px) and (max-width:699px){
+        
+ 
+
+.responsive-look img {
+
+    position: relative;
+    top: 30px;
+
+}
     
-    <ul class="home-social">
-      <li>
-        <a href="#0"
-          ><i class="fab fa-facebook-f" aria-hidden="true"></i
-          ><span>Facebook</span></a
-        >
-      </li>
-      <li>
-        <a href="#0"
-          ><i class="fab fa-twitter" aria-hidden="true"></i
-          ><span>Twiiter</span></a
-        >
-      </li>
-      <li>
-        <a href="#0"
-          ><i class="fab fa-instagram" aria-hidden="true"></i
-          ><span>Instagram</span></a
-        >
-      </li>
-    </ul>
-    <!-- end home-social -->
+	
+	.mob_file.col-md-7.col-sm-12.col-xs-12 {
+    background: #ffffff4d;
+    padding: 40px;
+    margin: 30px 0;
+}
+    }
 
-    <div class="row home-copyright">
-      <span>Copyright NeedMart 2018</span>
-      <span>Design by <a href="https://www.needmart.in/">NeedMart</a></span>
+.our_team{
+			  padding: 12px;border-radius: 11px;text-align: center;
+			 }
+			 .my_work {
+                          width: 200px !important;
+    height: 200px !important;
+    border-radius: 100%;
+    border: 9px solid #f9b42b;
+               }
+			 .our_team_desc{
+			 padding: 12px;border-radius: 11px;text-align: center;
+			 }
+			 .team_text{
+			 color: #fff;background: #6fbf17;padding: 15px;border-radius: 32%;
+			 }
+			 
+.top_section_heading {
+
+    color: white;
+    font-size: 29px;
+    font-weight: bold;
+
+}
+
+	</style>
+</head> 
+<body class="listar-home listar-hometwo">
+	<div id="listar-wrapper" class="listar-wrapper listar-haslayout">
+		<!--************************************
+				Header Start
+		*************************************-->
+		<header id="listar-header" class="listar-header cd-auto-hide-header listar-headervfour listar-haslayout">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<strong class="listar-logo"><a href="index.html"><img src="../../assets/images/logo.png" alt="Need Mart"></a></strong>
+						<nav class="listar-addnav">
+							<ul>
+								<li>
+									<a id="listar-btnsignin" class="listar-btn listar-btnblue" href="#listar-loginsingup">
+										<i class="fa fa-user"></i>
+										<span>LogIn/SignUp</span>
+									</a>
+								</li>
+								<li>
+									<a class="listar-btn listar-btngreen">
+										<i class="fa fa-phone"></i>
+										<span>6299856055</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<nav id="listar-nav" class="listar-nav">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#listar-navigation" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+							<div id="listar-navigation" class="collapse navbar-collapse listar-navigation">
+								<ul>
+								            <li><a href="index.html">Home</a></li>
+											<li><a href="about.html">About Us</a></li>
+					                        <li><a href="faq.html">Support</a></li>
+					                        <li><a href="contact.html">Contact</a></li>
+									        <li><a target="_blank" href="partner.html">Become  a Partner</a></li>
+											
+									
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--************************************
+				Header End
+		*************************************-->
+		<!--************************************
+				Home Slider Start
+		*************************************-->
+		<div id=" listar-homebannervthree" class=" listar-homebannervfour">
+			<figure><img src="../../assets/images/blog/topbanner.jpg" alt="Need Mart"></figure>
+			<div id="listar-homebanner" class="listar-homebanner">
+				<div class="container">
+					<div class="row">
+						<div class="listar-bannercontent">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 pull-left">
+								<h2 class="top_section_heading">Largest home service <span>provider in Jamshedpur</span></h2>
+								<div class="listar-description">
+									<p>Get instant access to reliable and affordable services. Just request a quote and we will do the rest.</p>
+									
+								</div>
+								<div class="listar-bestplacesincity">
+									<ul>
+										<li>
+											<i class="icon-shopping"></i>
+											<h3>Grocery</h3>
+										</li>
+										<li>
+											<i class="fa fa-diamond" aria-hidden="true"></i>
+											<h3>Beauty & Spa</h3>
+										</li>
+										<li>
+											<i class="icon-entertainment"></i>
+											<h3>Electronic</h3>
+										</li>
+										<li>
+											<i class="fa fa-globe"></i>
+											<h3>It Service</h3>
+										</li>
+										<li>
+											<i class="icon-book"></i>
+											<h3>Education</h3>
+										</li>
+										
+										
+									</ul>
+								</div>
+							</div>
+					
+					
+							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-4 pull-right">
+								<form class="listar-formtheme listar-formsearchlisting">
+									<fieldset>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-layers"></i>
+											<div class="listar-select">
+												<select id="listar-categorieschosen" class="listar-categorieschosen listar-chosendropdown">
+													<option value="-1">Ex: Food, Retail, hotel, cinema</option>
+													<option class="icon-fa fa-diamond" value="Fashion and Beauty">Fashion and Beauty</option>
+													<option class="icon-car" value="Cars and Vechiles">Cars and Vechiles</option>
+													<option class="icon-entertainment" value="Electronics and Gadgets">Electronics and Gadgets</option>
+													<option class="fa fa-building-o" value="Real Estate">Real Estate</option>
+													<option class="icon-foods" value="Education">Events Management</option>
+													<option class="icon-food" value="Catering Service">Catering Service</option>
+													<option class="fa fa-desktop" value="Computer">Computer</option>
+													<option class="fa fa-paint-brush" value="Painting">Painting</option>
+													<option class="icon-shopping" value="Grocery">Grocery</option>
+													<option class="icon-foods" value="Grocery">Grocery</option>
+													<option class="fa fa-fa-pie-chart " value="Medicines">Medicines</option>
+													<option class="fa fa-magic" value="Laundry">Laundry</option>
+													<option class="fa fa-globe" value="fa fa-globe">IT Services</option>
+													
+												</select>
+											</div>
+										</div>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-global"></i>
+											<div class="listar-select listar-selectlocation">
+												<select id="listar-locationchosen" class="listar-locationchosen listar-chosendropdown">
+													<option>Choose a Location</option>
+													<option>Mango</option>
+													<option>Sakchi</option>
+													<option>Baridih</option>
+													<option>Govindour</option>
+													<option>Adityapur</option>
+												</select>
+											</div>
+										</div>
+									
+										<button type="button" class="listar-btn listar-btngreen">Search for service</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--************************************
+				Home Slider End
+		*************************************-->
+			
+		<!--************************************
+				Main Start
+		*************************************-->
+		<main id="listar-main" class="listar-main listar-haslayout">
+			<!--************************************
+					Latest Cagegories Start
+			*************************************-->
+			
+			<section class="listar-sectionspace listar-haslayout" style=" background: linear-gradient(rgb(255, 255, 255),#fcfcfcb3, rgb(255, 255, 255)), url('../assets/images/blog/service.jpg') no-repeat 50% 50%;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead" style=" padding:0 0 13px">
+								<div class="listar-sectiontitle"> <br /><br />
+									<h2><a style="color: #fefefe;background: #6fbf17;padding: 0px 21px;border-radius: 15px;">Our Services</a></h2>
+								</div>
+								<div class="listar-description">
+									<p>We provide the following services to the people of Jamshedpur  <a class="listar-bluethemecolor" href="javascript:void(0);">See All Categories</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+                  <owl-carousel
+                  #owlElement
+                  [options]="mySlideOptions"
+                  [items]="mySlideImages"
+                  [carouselClasses]="['owl-theme', 'row', 'sliding']"
+                >
+                  <div class="item" *ngFor="let image of mySlideImages; let i = index">
+                      <div class="listar-themepost listar-categorypost">
+                          <figure class="listar-featuredimg">
+                            <a href="javascript:void(0);">
+                              <img src="{{image.path}}" alt="image description">
+                              <div class="listar-contentbox">
+                                <div class="listar-postcontent">
+                                  <span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+                                  <h3><a type="button" class="btn btn-info btn-lg mypop_col" href="Fix_Repairs.html">{{image.label}}</a></h3>
+                                  <h4>120 Listings</h4>
+                                </div>
+                              </div>
+                            </a>
+                          </figure>
+                        </div>
+                  </div>
+                </owl-carousel>
+                <!-- <div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-1.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" href="Fix_Repairs.html">Repair My Home</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-2.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank"  href="Appliances_Repair.html">Appliance Repairs</a> </h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-3.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank"  href="beauty_spa.html">Beauty & Spa</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-4.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank"  href="grocery.html">Grocery</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-5.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#rental_car">Rental Car</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-6.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#Pharmacy">Pharmacy</a> </h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-7.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#House_Painting">Painting</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-8.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank"  href="Wedding_and_Events.html">Wedding & Events</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-9.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#Laundry">Laundry</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-10.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#Education">Education</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-11.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank"  href="it_services.html">It Services</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/post/img-12.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="business_Document.html">Business & Doc.</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div> -->
+								
+								</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Recomended Services</h2>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/18.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="Recomended_Services.html#rental_car">Renatal car</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/19.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="Recomended_Services.html#Pharmacy">Pharmacy</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/first.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="Recomended_Services.html#First_Aid">First Aid Box</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/20.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="Recomended_Services.html#Laundry">Laundry</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/21.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="Recomended_Services.html#Education">Education</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/22.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Recomended_Services.html#House_Painting">House Painting</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<!--************************************
+					Latest Cagegories End
+			*************************************-->
+
+
+  <!-- Modal -->
+      <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Needmart</h4>
+        </div>
+        <div class="modal-body">
+           <div class="col-md-6"> 
+                  
+                     <input type="text" class="form-control form_control_margin" placeholder="Full Name" />
+                      <input type="text" class="form-control form_control_margin" placeholder="Email Id" />
+				      <select class="form-control form_control_margin" id="sel1">
+                         <option>Select your service</option>
+						 <option>Service One</option>
+                         <option>Service Two</option>
+                         <option>Service Three</option>
+                      </select>
+					  
+					  
+                    
+
+		   </div>
+		   <div class="col-md-6">
+              <input type="text" class="form-control form_control_margin" placeholder="Contact Number" />
+			         <input type="text" class="form-control form_control_margin" placeholder="Full Address" />
+			         <select class="form-control form_control_margin" id="sel1">
+                         <option>Select Time Duration</option>
+						 <option>Morning</option>
+                         <option>Afternoon</option>
+                         <option>Evening</option>
+                      </select>
+			        
+					
+		   </div>
+		   <div class="col-md-12">
+		    
+			<button type="button mypop_col " class="btn btn-primary btn-outline"> Place Order</button>
+		   </div>
+		</div>
+        <div class="modal-footer">
+          
+        </div>
+      </div>
     </div>
-    <!-- end home-copyright -->
-
-    <div class="home-content__line"></div>
   </div>
-  <!-- end home-content -->
-</main>
-<!-- end s-home -->
+	
 
-<!--
-  info
-  ==================================================
--->
-<!--
-  <a class="info-toggle" href="#0">
-      <span class="info-menu-icon"></span>
-  </a>
--->
+	<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Fix & Repairs</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/3.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Fix_Repairs.html#Electrical">Electrical</a></h3>
+														<h4>120 Listings</h4>
+														
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/4.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Fix_Repairs.html#Plumbing">Plumbing</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/1.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Fix_Repairs.html#television">T.V.</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/2.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Fix_Repairs.html#Computer_laptop">Computer / Laptop</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Appliances & Repair</h2>
+								</div>
 
-<div class="s-info">
-  <div class="row info-wrapper">
-    <div class="col-seven tab-full info-main">
-      <h1>Now all services @ Home just in a tap</h1>
-      <p>Every time you want to book an appointment for a home service,</p>
-      <p>So don't worry, we have come to serve you</p>
-      <p>just tap and you will have our experts at your service.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/5.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Appliances_Repair.html#Washing_Machine">Washing Machine</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/6.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Appliances_Repair.html#Air_Conditioner">Air Conditioner</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/7.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Appliances_Repair.html#Refrigerator">Refrigerator</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/8.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Appliances_Repair.html#Water_Purifier">Water Purifier</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/9.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Appliances_Repair.html#Microwave_Woven">Microwave Woven</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Beauty & Spa</h2>
+								</div>
 
-      <p></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/10.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"target="_blank" href="beauty_spa.html#Salon_Home">Salon at Home</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/11.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"target="_blank" href="beauty_spa.html#Makeup_Hair_Style">Makeup & Hair Style</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+								
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/12.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"target="_blank" href="beauty_spa.html#Mehandi">Mehandi</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Grocery</h2>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/13.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="grocery.html#Grocery">Grocery</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/14.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="grocery.html#Fruits_Vegetables">Fruits & Vegetables</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/15.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="grocery.html#Personal_Care">Personal Care</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/16.jpg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="grocery.html#Baby_Kids">Baby & Kids</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/17.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="grocery.html#Home_Kitchen">Home & Kitchen</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Wedding & Events</h2>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/23.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Bridal_Makeup">Bridal Makeup</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/24.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#MakeUp_Hair_Party">MakeUp & Hair for Party</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/25.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Mehandi">Mehandi</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/26.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Photography_Video">Photography & Video</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/27.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Party_Decoratings">Party  Decoratings</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/28.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Cake_Pantry">Cake for Pantry</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/29.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Flower_Baskets">Flower Baskets</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/30.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="Wedding_and_Events.html#Car_Decoratings">Car Decoratings</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>It Services</h2>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/31.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#Website_Designing">Website Designing</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/32.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#Mobile_App_Development">Mobile App Development</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/33.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#Web_Hosting">Web Hosting</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/34.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#Domain_Registration">Domain Registration</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/35.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#SEO_SMO">SEO/SMO</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/36.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="it_services.html#Bulk_SMS_Services">Bulk SMS Services</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/37.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="it_services.html#Digital_Marketing">Digital Marketing</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Business/Documentation</h2>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/38.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="business_Document.html#Private_DL">Private DL</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+							
+							                                    
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/39.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="business_Document.html#Commercial_DL">Commercial DL</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								                                
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/40.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="business_Document.html#Commercial_Tax">Commercial Tax</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								                                
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/41.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="business_Document.html#Permit">Permit</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								                                
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/42.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="business_Document.html#Pollution">Pollution</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								                                
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/43.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col"  target="_blank" href="business_Document.html#Fitness">Fitness</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								                                
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/44.jpeg" alt="image description">
+												<div class="listar-contentbox">
+													<div class="listar-postcontent">
+														<span class="listar-categoryicon listar-flip"><i class="fa fa-globe"></i></span>
+														<h3><a type="button" class="btn btn-info btn-lg mypop_col" target="_blank" href="business_Document.html#Tax">Tax</a></h3>
+														<h4>120 Listings</h4>
+													</div>
+												</div>
+											</a>
+										</figure>
+									</div>
+								</div>
+								
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		
+			
+			<section class="listar-businesstypesarea" style=" background: linear-gradient(rgb(111, 191, 23), #86c22780, rgb(111, 191, 23)) no-repeat 50% 50%;">
+				<div class="container">
+				   		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle"> <br><br>
+									<h2 style=" color:#fff;">How it Works</h2>
+								</div>
+
+							</div>
+						</div>
+
+					<div class="row">
+					<div class="container">
+					  <div id="listar-content" class="listar-content">
+						<div class="listar-posts listar-postsgrid listar-postsgridvone">
+						   
+   						    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+								<div class="listar-themepost listar-post our_team">
+									<figure class="listar-featuredimg">
+										<img class="my_work" src="../../assets/images/newimage/booking.jpeg" alt="image description">
+									</figure><br><br>
+									<div class="listar-postcontent our_team_desc" style="margin: 15px 0;">
+										<br><h2 style="color:#000;">Book</h2> 
+										<p> Select the date and time like your perofessional to show up  </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+								<div class="listar-themepost listar-post our_team">
+									<figure class="listar-featuredimg">
+										<img class="my_work" src="../../assets/images/newimage/appoint.jpeg" alt="image description" />
+									</figure><br><br>
+									<div class="listar-postcontent our_team_desc" style="margin: 15px 0;">
+										<br><h2 style="color:#000;">Appointment Schedule</h2> 
+										<p> Certified Taskers comes over and done your task </p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 ">
+								<div class="listar-themepost listar-post our_team">
+									<figure class="listar-featuredimg">
+										<img class="my_work"   src="../../assets/images/newimage/solve.jpg" alt="image description" />
+									</figure><br><br>
+									<div class="listar-postcontent our_team_desc"style="margin: 15px 0;">
+										<br><h2 style="color:#000;">Get Resolved</h2> 
+										<p>your task is completed to your satisfaction - guranteed </p>
+									</div>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+					</div>  
+					 
+					  
+                    </div>
+				</div>
+			</section>
+			<!--************************************
+					Add Listing Start
+			*************************************-->
+			<!--************************************
+					Add Listing End
+			*************************************-->
+			<!--************************************
+					Testimonials Start
+			*************************************-->
+			<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Testimonials</h2>
+								</div>
+								<div class="listar-description">
+									<p>What our Clients Says <a class="listar-bluethemecolor" href="javascript:void(0);">View All</a></p>
+								</div>
+							</div>
+						</div>
+						<div id="listar-testimonialslidervthree" class="listar-threecolumnsslider listar-testimonials listar-testimonialsvthree owl-carousel">
+							<div class="item listar-testimonial">
+								<blockquote>
+									<h5>Good Service</h5>
+									<q>It is the best stage for working together. Get need on Google seek by means of Need Mart posting. Simple to alter and refresh your items whenever. Exceptionally easy to use interface. It was valuable for me as new business I made more than I pay to them.</q>
+								</blockquote>
+								<figure>
+									<img src="../../assets/images/test2.png" alt="image description">
+									<figcaption>
+										<h3>Ram Kishor</h3>
+										<h4>Customer</h4>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="item listar-testimonial">
+								<blockquote>
+									<h5>Great Experience</h5>
+									<q>So far this has been the most accommodating application to me. It completed my work. Client care is great and they get in touch with you actually which makes things much simpler. I trust they will keep on giving such administrations in future likewise and isn't constrained for newcomers just.</q>
+								</blockquote>
+								<figure>
+									<img src="../../assets/images/test3.png" alt="image description">
+									<figcaption>
+										<h3>Raj Kumar</h3>
+										<h4>Customer</h4>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="item listar-testimonial">
+								<blockquote>
+									<h5>Satisfied Service </h5>
+									<q>It's really useful. Didn't expect such an extensive amount straightforwardness. You rock and thank you for your reasonable clarification about Need Mart.</q>
+								</blockquote>
+								<figure>
+									<img src="../../assets/images/test.png" alt="image description">
+									<figcaption>
+										<h3>Rakesh Gupta </h3>
+										<h4>Customer</h4>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="item listar-testimonial">
+								<blockquote>
+									<h5>Good for Local</h5>
+									<q>My most extreme purchaser work have been finished on this side, at very reasonable rate. Very Much appreciated Need Mart.</q>
+								</blockquote>
+								<figure>
+									<img src="../../assets/images/test.png" alt="image description">
+									<figcaption>
+										<h3>Satish Kumar</h3>
+										<h4>Customer</h4>
+									</figcaption>
+								</figure>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="listar-haslayout" id="downlod_app">
+				
+	
+    <div class="container text-center">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-12 col-xs-12 responsive-look"> 
+		    <img src="../../assets/images/newimage/mobile.png" alt="DOWNLOAD APP NOW"> </div>
+        <div class="col-md-7 col-sm-12 col-xs-12 mob_file">
+		    <br><br><br>
+          <div class="downlod_text text-center">
+            <h2><strong>DOWNLOAD</strong> APP NOW</h2>
+            <p>Slect your device platform and get<br>
+              download start</p>
+            <button type="button" class="btn btn-primary btn-outline" style="background: #0009;padding: 13px;"><i class="fa fa-apple" aria-hidden="true"></i> APPLE USER</button>
+            <button type="button" class="btn btn-primary btn-outline" style="background: #0009;padding: 13px;"><i class="fa fa-android" aria-hidden="true"></i> ANDROAID USER</button>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+			
 
-    <div class="col-four tab-full pull-right info-contact">
-      <div class="info-block">
-        <h3>Start A Conversation</h3>
-        <p>
-          <a href="mailto:#0" class="info-email">info@needmart.in</a><br />
-          <a href="tel:+919931458576" class="'info-phone">9931458576</a>
-        </p>
-      </div>
+	
+			<section class="listar-themeparallax" data-appear-top-offset="600" data-parallax="scroll" data-image-src="../../assets/images/post/banner.jpg">
+				<div class="listar-parallaxcolor listar-parallaxaddlisting">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-push-2 col-md-8 col-lg-push-2 col-lg-8">
+								<div class="listar-addlisting">
+									<h2>Wanted a free Consultation</h2>
+									<a class="listar-btn listar-btngreen" href="javascript:void(0);">
+										<span>Contact</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+<section class="listar-sectionspace listar-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="listar-sectionhead">
+								<div class="listar-sectiontitle">
+									<h2>Trusted by</h2>
+								</div>
 
-      <div class="info-block">
-        <h3>Visit Our Office</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div id="listar-categoriespostslider" class="listar-themeposts listar-categoryposts listar-gridslider owl-carousel">
+							
+								<div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg" style="background: red;border: 2px solid #6fbf17;">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/comp.jpg" alt="image description">
+											</a>
+										</figure>
+									</div>
+								</div>
+                                <div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg" style="background: red;border: 2px solid #6fbf17;">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/comp.jpg" alt="image description">
+											</a>
+										</figure>
+									</div>
+								</div>
+                                <div class="item">
+									<div class="listar-themepost listar-categorypost">
+										<figure class="listar-featuredimg" style="background: red;border: 2px solid #6fbf17;">
+											<a href="javascript:void(0);">
+												<img src="../../assets/images/newimage/comp.jpg" alt="image description">
+											</a>
+										</figure>
+									</div>
+								</div>
 
-        <p class="info-address"><br />Mango <br />Jamshedpur, Jharkhand</p>
-      </div>
-
-      <div class="info-block">
-        <h3>Find Us On</h3>
-
-        <ul class="info-social">
-          <li>
-            <a href="#0"
-              ><i class="fab fa-facebook" aria-hidden="true"></i>
-              <span>Facebook</span></a
-            >
-          </li>
-          <li>
-            <a href="#0"
-              ><i class="fab fa-twitter" aria-hidden="true"></i>
-              <span>Twiiter</span></a
-            >
-          </li>
-          <li>
-            <a href="#0"
-              ><i class="fab fa-instagram" aria-hidden="true"></i>
-              <span>Instagram</span></a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- end info contact -->
-  </div>
-  <!-- end info wrapper -->
-</div>
-<!-- end s-info -->
+								
+							
+							
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+	</main>
+		<!--************************************
+				Main End
+		*************************************-->
+		<!--************************************
+				Footer Start
+		*************************************-->
+	<footer id="listar-footer" class="listar-footer listar-footervtwo listar-haslayout" >
+			<div class="listar-footeraboutarea">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							
+                            <div class="col-md-2"> 
+							   <h2 class="white">  Quick Link </h2>
+							   <ul class="footer_text">
+							     <li  class="footer_text_li"> <a href="index.html">Home</a></li>
+								 <li  class="footer_text_li"> <a href="about.html">About Us </a></li>
+								 <li  class="footer_text_li"> <a target="_blank" href="partner.html">Become Partner</a></li>
+								 <li  class="footer_text_li"> <a href="faq.html"> Support </a></li>
+							   </ul>
+							</div>
+							<div class="col-md-2"> 
+							   <h2 class="white">  Service </h2>
+							   <ul class="footer_text">
+							     <li  class="footer_text_li"> <a href="#">Fix & Repairs</a></li>
+								 <li  class="footer_text_li"> <a href="#">Appliances & Repair</a></li>
+								 <li  class="footer_text_li"> <a href="#">Beauty & Spa</a></li>
+								 <li  class="footer_text_li"> <a href="#">Grocery</a></li>  
+							   </ul>
+							</div>
+							<div class="col-md-2"> 
+							   <h2 class="white">  Services </h2>
+							   <ul class="footer_text">
+							     <li  class="footer_text_li"> <a href="#">Wedding & Events</a></li>
+								 <li  class="footer_text_li"> <a href="#">It Services</a></li>
+								 <li  class="footer_text_li"> <a href="#">Business/Documentation</a></li>
+								 
+							   </ul>
+							</div>
+							<div class="col-md-2"> 
+							   <h2 class="white">  Places </h2>
+							   <ul class="footer_text">
+							     <li  class="footer_text_li"> <a href="#">jamshedpur</a></li>
+							   </ul>
+							</div>
+							
+							<div class="col-md-4"> 
+							   <h2 class="white"> FInd Us </h2>
+							   <ul class="listar-contactinfolist">
+												<li>
+													<i class="icon-icons74"></i>
+													<span>Mango, Jamshedpur, Jharkhand</span>
+												</li>
+												<li>
+													<i class="icon-"><img src="../../assets/images/icons/icon-03.png" alt="image description"></i>
+													<span>+91 6299856055</span>
+												</li>
+												<li>
+													<i class="icon-icons208"></i>
+													<span><a href="mailto:info@needmart.com">info@needmart.in</a></span>
+												</li>
+												
+												
+												
+											</ul>
+							</div>
+							
+							
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		
+		<div class="listar-footerbar">
+				<div class="container">
+					<div class="row">
+            <div class="col-md-6"><p class="copyright_text">Copyright &copy; 2018 NEEDMART. All rights reserved. Designed & Powerd by  : <a class="needserv" href="https://quarkstech.in/" target="_blank">Quarks Tech Infosoft</a>
+            </p>
+          </div>
+          <div class="col-md-2">
+              <p  class="copyright_text"><a style=" text-decoration:none;" href="term.html">Term</a>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a  style=" text-decoration:none;"  href="privacy.html">Privacy Policy</a>
+            </p>
+          </div>
+						<div class="col-md-4">
+							    
+								<ul class="listar-socialicons">
+									<li class="listar-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+									<li class="listar-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+									<li class="listar-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+									<li class="listar-googleplus"><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+									<li class="listar-vimeo"><a href="javascript:void(0);"><i class="fa fa-vimeo"></i></a></li>
+								</ul>
+								
+						</div>
+						
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--************************************
+				Footer End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<!--************************************
+			Theme Modal Box Start
+	*************************************-->
+<!--	<div class="modal fade listar-placequickview" tabindex="-1" role="dialog">
+		<div class="modal-dialog listar-modaldialog" role="document">
+			<div class="modal-content listar-modalcontent">
+				<div class="listar-themepost listar-placespost">
+					<span class="listar-btnclosequickview" data-toggle="modal" data-target=".listar-placequickview">X</span>
+					<figure class="listar-featuredimg" data-vide-bg="poster: images/post/img-16.jpg" data-vide-options="position: 50% 50%">
+						<span class="listar-contactnumber">
+							<i class="icon-"><img src="../../assets/images/icons/icon-03.png" alt="image description"></i>
+							<em> + 7890 456 133</em>
+						</span>
+					</figure>
+					<div class="listar-postcontent">
+						<h3><a href="javascript:void(0);">Serena Hotel</a><i class="icon-checkmark listar-postverified listar-themetooltip" data-toggle="tooltip" data-placement="top" title="Verified"></i></h3>
+						<div class="listar-description">
+							<p>Ut euismod ultricies sollicitudin. Curabitur sed dapibus nulla. Nulla eget iaculis lectus. Mauris ac maximus neque. Nam in mauris quis libero sodales eleifend. Morbi varius, nulla sit Nam in mauris quis libero sodales eleifend amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus</p>
+						</div>
+						<ul class="listar-listfeatures">
+							<li>Pets allowed</li>
+							<li>Kitchen</li>
+							<li>Internet</li>
+							<li>Suitable for events</li>
+							<li>Gym</li>
+							<li>Dryer</li>
+							<li>Hot tub</li>
+							<li>Family/kid friendly</li>
+							<li>Wireless Internet</li>
+						</ul>
+						<div class="listar-reviewcategory">
+							<div class="listar-review">
+								<span class="listar-stars"><span></span></span>
+								<em>(3 Review)</em>
+							</div>
+							<a href="javascript:void(0);" class="listar-category">
+								<i class="icon-tourism"></i>
+								<span>Hotel</span>
+							</a>
+						</div>
+						<div class="listar-themepostfoot">
+							<span class="listar-openinghours">
+								<i class="icon-alarmclock2"></i>
+								<em>Today <span class="listar-greenthemecolor">Open Now</span> 10:00 AM - 5:00 PM</em>
+							</span>
+							<div class="listar-postbtns">
+								<a class="listar-btnquickinfo listar-liked" href="javascript:void(0);"><i class="icon-heart2"></i></a>
+								<div class="listar-btnquickinfo">
+									<div class="listar-shareicons">
+										<a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+										<a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+										<a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a>
+									</div>
+									<a class="listar-btnshare" href="javascript:void(0);">
+										<i class="icon-share3"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	************************************
+			Theme Modal Box End
+	*************************************-->
+	<!--************************************
+			Login Singup Start
+	*************************************-->
+	<div id="listar-loginsingup" class="listar-loginsingup">
+		<button type="button" class="listar-btnclose">x</button>
+		<figure class="listar-loginsingupimg" data-vide-bg="poster: images/bgjoin.jpg" data-vide-options="position: 50% 50%"></figure>
+		<div class="listar-contentarea">
+			<div class="listar-themescrollbar">
+				<div class="listar-logincontent">
+					<div class="listar-themetabs">
+						<ul class="listar-tabnavloginregistered" role="tablist">
+							<li role="presentation" class="active"><a href="#listar-loging" data-toggle="tab">Log in</a></li>
+							<li role="presentation"><a href="#listar-register" data-toggle="tab">Register</a></li>
+						</ul>
+						<div class="tab-content listar-tabcontentloginregistered">
+							<div role="tabpanel" class="tab-pane active fade in" id="listar-loging">
+								<form class="listar-formtheme listar-formlogin">
+									<fieldset>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-profile-male"></i>
+											<input type="text" name="username" class="form-control" placeholder="Username Or Email">
+										</div>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-icons208"></i>
+											<input type="password" name="password" class="form-control" placeholder="Password">
+										</div>
+										<div class="form-group">
+											<div class="listar-checkbox">
+												<input type="checkbox" name="remember" id="rememberpass2">
+												<label for="rememberpass2">Remember me</label>
+											</div>
+											<span><a href="#">Lost your Password?</a></span>
+										</div>
+										<button class="listar-btn listar-btngreen">Register</button>
+									</fieldset>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="listar-register">
+								<form class="listar-formtheme listar-formlogin">
+									<fieldset>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-profile-male"></i>
+											<input type="text" name="username" class="form-control" placeholder="Username">
+										</div>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-icons208"></i>
+											<input type="email" name="emailaddress" class="form-control" placeholder="Email Address">
+										</div>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-lock-stripes"></i>
+											<input type="password" name="password" class="form-control" placeholder="Password">
+										</div>
+										<div class="form-group listar-inputwithicon">
+											<i class="icon-lock-stripes"></i>
+											<input type="password" name="confirmpassword" class="form-control" placeholder="Password">
+										</div>
+										<button class="listar-btn listar-btngreen">login</button>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="listar-shareor"><span>or</span></div>
+					<div class="listar-signupwith">
+						<h2>Sign in With...</h2>
+						<ul class="listar-signinloginwithsocialaccount">
+							<li class="listar-facebook"><a href="javascript:void(0);"><i class="icon-facebook-1"></i><span>Facebook</span></a></li>
+							<li class="listar-twitter"><a href="javascript:void(0);"><i class="icon-twitter-1"></i><span>Twitter</span></a></li>
+							<li class="listar-googleplus"><a href="javascript:void(0);"><i class="icon-google4"></i><span>Google +</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--************************************
+			Login Singup End
+	*************************************-->
+	
+</body>
+</html>

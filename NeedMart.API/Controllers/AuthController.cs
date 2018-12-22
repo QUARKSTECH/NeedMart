@@ -34,7 +34,10 @@ namespace NeedMart.API.Controllers
 
             var UserToCreate = new User
             {
-                UserName = userForRegisterDto.UserName
+                UserName = userForRegisterDto.UserName,
+                CompanyName = userForRegisterDto.CompanyName,
+                ContactNumber = userForRegisterDto.ContactNumber,
+                Email = userForRegisterDto.Email
             };
 
             var createdUser = await _repo.Register(UserToCreate, userForRegisterDto.Password);
@@ -53,7 +56,8 @@ namespace NeedMart.API.Controllers
             var claims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, userFromRepo.Id.ToString()),
-                new Claim(ClaimTypes.Name, userFromRepo.UserName)
+                new Claim(ClaimTypes.Name, userFromRepo.UserName),
+                new Claim(ClaimTypes.GivenName, userFromRepo.CompanyName)
             };
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSetting:Token").Value));
