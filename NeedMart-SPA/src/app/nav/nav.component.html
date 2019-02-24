@@ -1,156 +1,92 @@
-<!-- ======= header part start ======= -->
-<header class="header-area">
-  <!-- top  header area -->
-  <div class="top-header-area">
-    <div class="customContainer">
-      <div class="row">
-        <div class="col-md-3">
-          <!-- company slogan -->
-          <div class="slogan">
-            <p>Shape your dream with the help of expert builders</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <!-- header contact -->
-          <div class="top-header-info">
-            <a href="mailto:sales@omphoenixtraders.com"
-              ><i class="fa fa-envelope"></i>sales@omphoenixtraders.com</a
-            ><br>
-            <a><i class="fa fa-phone"></i>75430 97583</a>
-          </div>
-        </div>
-        <div class="col-md-5">
-            <form *ngIf="!loggedIn()"
-            #loginForm="ngForm"
-            class="form-inline my-2 my-lg-0"
-            (ngSubmit)="login()"
-          >
-            <input
-              class="form-control mr-sm-2"
-              type="text"
-              name="username"
-              placeholder="Username"
-              required
-              [(ngModel)]="model.username"
-            />
-            <input
-              class="form-control mr-sm-2"
-              type="password"
-              name="password"
-              placeholder="Password"
-              required
-              [(ngModel)]="model.password"
-            />
-            <button [disabled]="!loginForm.valid" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-            <app-register *ngIf="!loggedIn()"></app-register>
-          </form>
-          <div *ngIf="loggedIn()" class="dropdown text-right" dropdown>
-              <a class="dropdown-toggle text-light" dropdownToggle>
-                Welcome {{authService.decodedToken?.unique_name | titlecase}}
-              </a>
-              <div class="dropdown-menu mt-3" *dropdownMenu>
-                <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit profile</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
-              </div>
-            </div>
-         </div>
-      </div>
-    </div>
-  </div>
-  <!-- menu area -->
-  <div class="menu-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <!-- logo part -->
-          <div class="arina-logo">
-            <a [routerLink]="['/home']" ><img src="../../assets/images/logo.png" alt=""/></a>
-          </div>
-          <div class="responsive-menu-wrap"></div>
-        </div>
-        <div class="col-md-9">
-          <!-- menu part -->
-          <nav class="main-menu">
-            <ul class="navigation">
-              <li><a [routerLink]="['/home']" routerLinkActive="menu-active">Home</a></li>
-              <li *ngIf="loggedIn()">
-                <a [routerLink]="['/machineadd']" *ngIf="authService.decodedToken?.unique_name!='admin'" routerLinkActive="menu-active" >Company</a>
-                <a [routerLink]="['/admin']" *ngIf="authService.decodedToken?.unique_name==='admin'" routerLinkActive="menu-active" >Admin</a>
-                <!-- <ul class="drop-menu">
-                  <li><a [routerLink]="['/machineadd']" >Add Machine</a></li>
-                </ul> -->
-              </li>
-              <li><a [routerLink]="['/service']" routerLinkActive="menu-active" >Services</a></li>
-              <li>
-                <a [routerLink]="['/product']" routerLinkActive="menu-active" >Product</a>
-                <!-- <ul class="drop-menu">
-                  <li><a href="indofork.html">Indo Fork</a></li>
-                  <li><a href="mark.html">Mark</a></li>
-                  <li><a href="parker.html">Parker</a></li>
-                </ul> -->
-              </li>
-
-              <li><a [routerLink]="['/contact']" routerLinkActive="menu-active" >contact us</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- ======= header part end ======= -->
-
-<!--
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <div class="logo">
-        <a href="#">
-            <img src="../../assets/logo.png" alt="Homepage">
-        </a>
-    </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-        <div *ngIf="loggedIn()" class="dropdown" dropdown>
-            <a class="dropdown-toggle text-light" dropdownToggle>
-              Welcome {{authService.decodedToken?.unique_name | titlecase}}
-            </a>
-            <div class="dropdown-menu mt-3" *dropdownMenu>
-              <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit profile</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" (click)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
-            </div>
-          </div>
-
-        <form *ngIf="!loggedIn()"
-          #loginForm="ngForm"
-          class="form-inline my-2 my-lg-0"
-          (ngSubmit)="login()"
-        >
-          <input
-            class="form-control mr-sm-2"
-            type="text"
-            name="username"
-            placeholder="Username"
-            required
-            [(ngModel)]="model.username"
-          />
-          <input
-            class="form-control mr-sm-2"
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-            [(ngModel)]="model.password"
-          />
-          <button [disabled]="!loginForm.valid" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-        </form>
-      </div>
-    </nav>
-  </header>
--->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>NeedMart- +91-6299856055 Largest Home Service Provider In Jamshedpur</title>
+  <meta property="og:site_name" content="Need Mart Online Consumer Services">
+  <meta property="og:url" content="index.html">
+  <meta property="og:description" content="Need Mart is a trusted platform for maintenance &amp; repair services in Jamshedpur. Get verified plumbers, electricians, home cleaning &amp; more services with warranty">
+  <meta name="description" content="Need Mart is a trusted platform for maintenance &amp; repair services in Jamshedpur. Get verified plumbers, electricians, home cleaning &amp; more services with warranty" />
+  <meta name="keywords" content="handyman, Handyman services,Home maintenance,House cleaning,Repair,Cleaning services,Maintenance packages" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!">
+  
+  <meta name="theme-color" content="#3fb661">
+  
+  <meta name="msapplication-navbutton-color" content="#3fb661">
+  
+  <meta name="apple-mobile-web-app-status-bar-style" content="#3fb661">
+  <script src="cdn-cgi/apps/head/hs1yXS4XC5-dKK84xFGQvpObmjE.js"></script><link rel="icon" type="image/png" href="../assets/images/favicon.png" sizes="32x32">
+  <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/oldassset/assets/css/animate.min.css"> 
+  <link rel="stylesheet" href="../assets/css/style.css"> -->
+  <!-- <link rel="stylesheet" href="../assets/css/service-detail.css"> -->
+  <!-- <script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <!-- <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/tiny-slider.css"> -->
+  <!-- <script src="../cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/min/tiny-slider.js"></script> -->
+  <script type="application/ld+json">
+              {  "@context" : "http://schema.org", 
+                 "@type" : "Organization", 
+                 "name" : "Need Mart Online Consumer Services Pvt. Ltd", 
+                 "url" : "https://www.Need Mart.com/", 
+                 "telephone" : "+91 8105826091", 
+                 "logo" : "https://www.Need Mart.com/assets/images/Logo.png",
+                 "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91 810-582-6091",
+              "contactType": "customer care",
+              "areaServed": [ "Jamshedpur" ]
+            }
+          ],
+                 "sameAs" : [ "https://www.facebook.com/Need MartServices", 
+                     "https://twitter.com/Need Martservices", 
+                     "https://plus.google.com/+Need Mart2015/about",
+                     "https://www.youtube.com/channel/UCJ_kxbxKOFO9w0I-PeJd6Ng",
+                     "https://www.linkedin.com/company/Need Mart-online-consumer-services"]
+              }
+            </script>
+  
+  <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','../connect.facebook.net/en_US/fbevents.js');
+  
+      fbq('init', '1677966602440722');
+      fbq('track', 'PageView');
+      </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1677966602440722&ev=PageView&noscript=1" /></noscript>
+  
+  
+    
+    
+    
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <!-- <script>
+      addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+      }, false);
+  
+      function hideURLbar() {
+        window.scrollTo(0, 1);
+      }
+    </script> -->
+    <!-- Meta tag Keywords -->
+  
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css" type="text/css" media="all" /> -->
+    <!-- Style-CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+  
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  
+  </head>

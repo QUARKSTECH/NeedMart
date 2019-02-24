@@ -1,0 +1,388 @@
+
+/* General style
+---------------------------------------------------------*/
+.top-box{
+  display:none;
+}
+.about-h2 {
+  padding: 32px 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disp_inline {
+  display: inline-flex;
+}
+
+.green {
+  background: #E1F9E7;
+}
+
+.col-md-3 {
+  padding: 0;
+}
+
+.block_content {
+  background: #f6f6f6;
+  padding: 41px 30px 36px 30px;
+  border-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+
+/* Home Section style
+---------------------------------------------------------*/
+
+section.masthead {
+  background-color: rgb(56,72,97);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    padding: 50px 0;
+}
+
+.home_head {
+  font-size: 29pt;
+  text-transform: capitalize;
+  color: #3FB661;
+  font-weight: 600;
+}
+
+.home_description {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  color:#fff;
+}
+
+.left_quote {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right_quote {
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  header.masthead>.overlay {
+    padding: 10rem 0;
+  }
+}
+blockquote:before {
+    content: "\201C";
+    left: 0;
+    margin-top: -11px;
+    top: 0;
+    font-size: 42px;
+    font-weight: 700;
+    height: 32px;
+    position: absolute;
+}
+blockquote:after {
+    bottom: 8px;
+    content: "\201D";
+    right: 0;
+    margin-bottom: 0;
+    font-size: 42px;
+    font-weight: 700;
+    height: 32px;
+    position: absolute;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid #eee;
+    color: rgba(255, 255, 255, 0.59);
+}
+
+blockquote {
+    padding: 32px 12PX !important;
+    border: 0 !important;
+    border: none !important;
+    quotes: "\201C""\201D""\2018""\2019";
+    display: inline-block;
+    position: relative;
+    margin: 10px 0 0 !important;
+}
+
+
+/* About Section style
+---------------------------------------------------------*/
+
+
+.divider {
+  position: absolute;
+  border: 2px dotted #333;
+  width: 65%;
+  top: 100px;
+  left: 17%;
+  z-index: 0;
+}
+
+.image_container {
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 75px;
+  background: #3FB661;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container img {
+  width: 100%;
+}
+
+.service_text_one {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.service_text_two {
+  color: gray;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+
+/* Team Section style
+---------------------------------------------------------*/
+
+.user_detail {
+  background: #E1F9E7;
+  border: 1px solid green;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: center;
+}
+
+.user_name {
+  color: #3FB662;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 10px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.user_position {
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.user_image {
+  position: relative;
+  overflow: hidden;
+}
+
+.user_image img {
+  width: 100%;
+}
+
+.user_image:hover:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.user_image:hover img {
+  opacity: 0.9;
+}
+
+.user_container {
+  padding: 0px 10px;
+}
+
+
+
+/* Advisory Panel Section style
+---------------------------------------------------------*/
+.panel_remarks {
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disp-flex{
+  display: flex;
+}
+.margin-bottom-30{
+  margin-bottom: 30px;
+}
+
+/*  media query
+---------------------------------------------------------*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+section.masthead{
+  height: auto;
+  padding: 55px 0 15px;
+}
+.home_head{
+  font-size: 20px;
+  line-height: 24px;
+}
+.disp-flex{
+  display: initial;
+}
+.divider{
+  display: none;
+}
+blockquote{
+  padding: 0 !important;
+  margin:0 !important;
+}
+.home_description{
+  font-size: 14px;
+}
+blockquote:before, blockquote:after{
+  font-size: 30px;
+}
+.about-h2 {
+    padding: 15px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+}
+
+
+
+.what-feature > div:not(.divider) {
+  position: relative;
+  z-index: 2;
+}
+.user-main-contianer > div {
+  width: 33%;
+}
+.user-main-contianer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.disp-flex-change {
+  flex-wrap: wrap;
+}
+.disp-flex-change > div {
+  width: 25%;
+}
+@media (max-width: 990px) {
+ section.masthead {
+       padding: 100px 0 50px 0;
+ } 
+ .what-feature .divider {
+   display: none;
+ }
+}
+@media (max-width: 768px) { 
+  .user-main-contianer > div {
+    width: 50%;
+    margin: 0 0 15px 0;
+}
+.disp-flex-change > div {
+    width: 50%;
+}
+.about-advisory1 div:nth-of-type(1) {
+  order: 1;
+}
+.about-advisory1 div:nth-of-type(2) {
+  order: 2;
+}
+.about-advisory1 div:nth-of-type(3) {
+  order: 4;
+}
+.about-advisory1 div:nth-of-type(4) {
+  order: 3;
+}
+.about-advisory2 div:nth-of-type(1) {
+  order: 2;
+}
+.about-advisory2 div:nth-of-type(2) {
+  order: 1;
+}
+.about-advisory2 div:nth-of-type(3) {
+  order: 3;
+}
+.about-advisory2 div:nth-of-type(4) {
+  order: 4;
+}
+.about-advisory1, .about-advisory2 {
+  padding: 0 15px;
+}
+}
+@media (max-width: 500px) { 
+  .user-main-contianer > div {
+    width: 100%;
+}
+.disp-flex-change > div {
+    width: 100%;
+}
+
+.panel_remarks {
+  margin-bottom: 15px;
+}
+.about-advisory1 div:nth-of-type(1) {
+  order: 1;
+}
+.about-advisory1 div:nth-of-type(2) {
+  order: 2;
+}
+.about-advisory1 div:nth-of-type(3) {
+  order: 3;
+}
+.about-advisory1 div:nth-of-type(4) {
+  order: 4;
+}
+.about-advisory2 div:nth-of-type(1) {
+  order: 2;
+}
+.about-advisory2 div:nth-of-type(2) {
+  order: 1;
+}
+.about-advisory2 div:nth-of-type(3) {
+  order: 4;
+}
+.about-advisory2 div:nth-of-type(4) {
+  order: 3;
+}
+}

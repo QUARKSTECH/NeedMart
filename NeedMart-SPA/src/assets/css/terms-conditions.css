@@ -1,0 +1,363 @@
+.top-box{
+  display:none;
+}
+/* Style the tab */
+div.tab {
+    float: left;
+    padding: 0px;
+    width: 25%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background:#fff;
+    color: black;
+    padding: 6px 0px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+   
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+   
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    width: 75%;
+    border-left: none;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+font-size: 13px;
+color: #aaa;
+}
+::-moz-placeholder { /* Firefox 19+ */
+font-size: 13px;
+color: #aaa;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+font-size: 13px;
+color: #aaa;
+}
+:-moz-placeholder { /* Firefox 18- */
+font-size: 13px;
+color: #aaa;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: #fff !important;
+}
+
+input[type=submit],#submitPartnerRegForm input[type=button], #submitFeedbackForm input[type=button]{
+    width:40%;
+    background-color: #333 !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#message{
+    height:80px;
+}
+.container2 {
+    border-radius: 5px;
+   
+    padding: 0px;
+}
+.news-img{
+    padding: 25px 20px;
+    width: 100% !important;
+    margin:0 auto !important;
+    border-radius: 1px;
+    box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.05);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.05);
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.05);
+    text-align: center;
+    background: #f9f9f9;
+    border: 8px solid #FFF;
+}
+.news-img:hover {
+    box-shadow: 0 1px 25px rgba(153,153,153,.2);
+    -moz-box-shadow: 0 1px 25px rgba(153,153,153,.2);
+    -webkit-box-shadow: 0 1px 25px rgba(153,153,153,.2);
+}
+.news-img img{
+    width: 160px;
+    margin:0 auto;
+    text-align: center;
+}
+.inner {
+    margin: 60px auto;
+    /*max-width: 1030px;*/
+    width: 100%;
+    
+}
+.gh-page-nav h3 {
+    display: block;
+    margin: 0;
+    padding:0 0 4px 0;
+    font-size: 1.3rem !important;
+    font-weight: 700;
+}
+.gh-page-nav-list {
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+}
+.gh-page-nav-list li {
+    margin: 0;
+}
+.main-body-heading {
+   padding: 0 0 0 10px; 
+}
+.main-body-heading span{
+        color: #3FB661;margin-left: 6px;font-weight: 500;
+}
+.gh-page-nav-list a {
+    display: block;
+    padding: 4px 0;
+    font-weight: 400;
+    color: grey;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.gh-page-nav-list a:hover {
+    text-decoration: underline !important;
+    color: #3bb34a;
+    transition: all .2s ease;
+}
+.tabcontent h1 {
+    margin: 0 0 .5em;
+    font-size: 2.6rem !important;
+    font-weight: 600 !important;
+    border-left: 6px solid #3FB661; 
+}
+.main-sub-heading {
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 14px;
+    color: #52636b;
+    text-align: justify;
+}
+.main-body h4 {
+    margin-top: 33px;
+    line-height: 24px;
+    color: #111111;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.main-body h4:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #3bb34a;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+.list{
+    list-style: disc !important;
+    color: #52636b;
+    margin-left: 30px;
+}
+.margin-top-bottom-50{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container2 p{
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 14px;
+    color: #52636b;
+}
+label{
+    font-weight: 600;
+}
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+#submitFeedbackForm input[type=button]{
+    width:70%;
+}
+div.tab{
+width: 100%;
+height: auto;
+}
+.tabcontent{
+    width: 100%
+}
+.tabcontent h1{
+    width: 100%;
+    font-size:20px !important;
+}
+.main-body h4{
+    font-size:16px;
+}
+.inner {
+    margin: 25px auto;
+    /*max-width: 1030px;*/
+    width: 100%;
+    
+}
+
+}
+@media (max-width: 768px) {
+    .tab{
+        display:none;
+    }
+    .tabcontent{
+        width: 100%;
+    }
+    .inner {
+        margin: 25px auto;
+        width: 100%;
+    }
+}
+
+input:focus , select:focus , textarea:focus{
+    border-color: #3fb661;
+    outline: none;
+    background:#fff;
+}
+
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 8px;
+    outline: none;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 0; left: 4px;
+  font-size: 14px;
+  color: #3fb661;
+  transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+[type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #3fb661 !important;
+}
+.label-font label{
+ color: #333;
+ font-size: 13px;
+}
+.form-heading{
+    margin:0 0 20px 0 !important;
+    font-size: 24px;
+    font-weight: 500;
+    color: #6b6f78;
+}
+.form-box{
+    background: #fbfbfb; border-radius: 4px;  
+    box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.005);
+    -moz-box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.005);
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(84, 77, 77, 0.005);   
+    border: 1px solid #3fb661;
+}
+.address{
+    line-height: 30px;
+}
+.tc-list li{
+    line-height: 26px;
+    margin-top: 14px;
+    color: #52636b;
+}
+.gh-page-nav-list>.active>a{
+    text-decoration: underline !important;
+    color: #3bb34a;
+    transition: all .2s ease;
+}
+
+#submitContactUsForm input[type=button]{
+  background-color: #333 !important;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width: 80%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.errMsg{
+    color:#a94442;
+    margin-bottom:16px !important;
+}
