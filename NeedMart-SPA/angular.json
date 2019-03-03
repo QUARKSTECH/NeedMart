@@ -35,7 +35,8 @@
               "src/assets/js/flickity.min.js",
               "src/assets/js/gmc.js",
               "src/assets/js/home-mob.js",
-              "src/assets/js/sidebarjs.min.js"
+              "src/assets/js/sidebarjs.min.js",
+              "src/assets/js/header-on-scroll.js"
             ]
           },
           "configurations": {

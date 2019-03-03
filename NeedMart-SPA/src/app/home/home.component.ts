@@ -16,4 +16,8 @@ export class HomeComponent implements OnInit {
 
   createAppointment() {
   }
+
+  sidebarDisplay() {
+    document.getElementById('idmobilesidebar').style.visibility = 'visible';
+  }
 }
